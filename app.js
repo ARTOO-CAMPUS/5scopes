@@ -1,5 +1,5 @@
 angular.module('app', [])
 
-	.run(function () {
-
+	.run(function ($rootScope) {
+		$rootScope.titolo = 'Esercizio sugli scope';
 	});

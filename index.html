@@ -21,12 +21,12 @@
       <!--<h1 >{{titolo}}</h1>-->
       <div class="row">
         <h1 ng-bind="titolo"></h1>
-        <label for="nome">Label</label>
-        <input name="nome" type="text" class="form-control" placeholder="Scrivi qui il tuo nome">
+        <label for="nome">{{label}}:</label>
+        <input name="nome" type="text" class="form-control" placeholder="Scrivi qui il tuo nome" ng-model="testo">
       </div>
       <div class="row">
         <h2>Two way data binding</h2>
-        <p><strong>Label</strong> </p>
+        <p><strong>{{label}}:</strong> {{testo}}</p>
       </div>
     </div>
   </div>
